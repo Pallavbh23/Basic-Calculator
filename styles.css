@@ -68,3 +68,17 @@
 #delete:hover {
   background-color: red;
 }
+@media only screen and (max-width: 1000px)
+{
+	#calculator{
+		width: 50vw;
+		margin-left: 25vw;
+	}
+}
+@media only screen and (max-width: 500px)
+{
+	#calculator{
+		width: 100vw;
+		margin-left: 0;
+	}
+}
