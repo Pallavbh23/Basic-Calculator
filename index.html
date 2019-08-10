@@ -1,0 +1,90 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="calculator">
+      <div id="text-box">
+        <p id = "text">Enter your text...</p>
+      </div>
+      <div id="inputs">
+        <div class="rows" id="row1">
+          <div class = "clickable special" onclick="clearEval()">
+            <p>AC</p>
+          </div>
+          <div class="clickable special" onclick = "changeSign()">
+            <p>+/-</p>
+          </div>
+          <div class="clickable special" onclick="converttopercentage()">
+            <p>%</p>
+          </div>
+          <div class="clickable special" onclick="addtoEval(' / ')">
+            <p>/</p>
+          </div>
+        </div>
+        <div class="rows" id="row2">
+          <div class="clickable" onclick = "addtoEval(7)">
+            <p>7</p>
+          </div class = "clickable">
+          <div class="clickable" onclick = "addtoEval(8)">
+            <p>8</p>
+          </div>
+          <div class="clickable" onclick = "addtoEval(9)">
+            <p>9</p>
+          </div>
+          <div class="clickable special" onclick = "addtoEval(' * ')">
+            <p>*</p>
+          </div>
+        </div>
+        <div class="rows" id="row3">
+          <div class="clickable" onclick = "addtoEval(4)">
+            <p>4</p>
+          </div>
+          <div class="clickable" onclick = "addtoEval(5)">
+            <p>5</p>
+          </div>
+          <div class="clickable" onclick = "addtoEval(6)">
+            <p>6</p>
+          </div>
+          <div class="clickable special" onclick = "addtoEval(' - ')">
+            <p>-</p>
+          </div>
+        </div>
+        <div class="rows" id="row4">
+          <div class="clickable" onclick = "addtoEval(1)">
+            <p>1</p>
+          </div>
+          <div class="clickable" onclick = "addtoEval(2)">
+            <p>2</p>
+          </div>
+          <div class="clickable" onclick = "addtoEval(3)">
+            <p>3</p>
+          </div>
+          <div class="clickable special" onclick = "addtoEval(' + ')">
+            <p>+</p>
+          </div>
+        </div>
+        <div class="rows" id="row5">
+          <div class="clickable" id="bottom-left" onclick = "addtoEval(0)">
+            <p>0</p>
+          </div>
+          <div class="clickable" onclick = "addtoEval('.')">
+            <p>.</p>
+          </div>
+          <div class="clickable" id="delete" onclick = "removefromEval()">
+            <p>Del</p>
+          </div>
+          <div class="clickable special" id="bottom-right" onclick="solve()">
+            <p>=</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src = "script.js">
+    </script>
+  </body>
+</html>
